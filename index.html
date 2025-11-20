@@ -57,7 +57,9 @@
           if(!cart[id]) cart[id]={id:id,desc:desc,price:price,qty:0};
           cart[id].qty = (cart[id].qty||0) + 1;
           saveCart(cart);
+          // show a quick toast then redirect to cart page so user sees the added item
           showMsg();
+          setTimeout(function(){ window.location.href = 'cart.html'; }, 400);
         });
       });
     })();

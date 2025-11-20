@@ -72,3 +72,47 @@ body{
 @media (max-width:760px){
   .cd-table{width:100%}
 }
+
+/* Styles specific to cart page to match the provided screenshot */
+.cart-table{
+  width:760px;
+  border-collapse:collapse;
+  margin-top:6px;
+}
+.cart-table thead th{
+  background:#eaeaea;
+  border:1px solid #9a9a9a;
+  padding:10px 12px;
+  font-weight:700;
+}
+.cart-table td{
+  border:1px solid #9a9a9a;
+  padding:12px 14px;
+  vertical-align:middle;
+}
+.cart-table input[type="number"]{
+  width:56px;
+  padding:6px;
+  border:1px solid #bbb;
+  border-radius:3px;
+}
+.cart-table button.update, .cart-table button.remove{
+  background:linear-gradient(#efefef,#ddd);
+  border:2px solid #9a9a9a;
+  padding:6px 10px;
+  border-radius:4px;
+}
+.cart-table .remove{
+  float:right;
+}
+.cart-table .price-cell{ text-align:left; padding-left:12px }
+
+/* Buttons below table */
+.wrap > div > a.add, .wrap > div > button.add{
+  display:inline-block;
+  text-decoration:none;
+  margin-right:8px;
+}
+
+/* Make header color match screenshot teal */
+.title{ color:#0b7a73 }
